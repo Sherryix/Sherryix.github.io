@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-23T16:04:59.981Z</updated>
+  <updated>2020-11-22T13:02:21.166Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,40 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://sherryix.com/posts/d87f7e0c.html"/>
-    <id>http://sherryix.com/posts/d87f7e0c.html</id>
-    <published>2020-11-23T16:04:21.000Z</published>
-    <updated>2020-11-23T16:04:59.981Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;/posts/Blog\hexo\source_posts\test\祝你好运.jpg&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hexo+Github Pages搭建个人博客（一）</title>
-    <link href="http://sherryix.com/posts/9e423b68.html"/>
-    <id>http://sherryix.com/posts/9e423b68.html</id>
-    <published>2020-11-23T15:14:29.000Z</published>
-    <updated>2020-11-23T15:53:08.804Z</updated>
-    
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>个人博客，完成！</title>
