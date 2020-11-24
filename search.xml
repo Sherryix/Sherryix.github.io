@@ -1,9 +1,171 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo+GitHub Pages搭建个人博客（一）</title>
+    <url>/posts/9e423b68.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在这个页面的底端有这样一句话：</p>
+<p>“由 <a href="https://hexo.io/">Hexo</a> &amp; <a href="https://pisces.theme-next.org/">NexT.Pisces</a> 强力驱动”</p>
+<p>相信已经有人搜索过这里出现的“Hexo”和“NexT.Pisces”。你可能会找到这样的教程：</p>
+<p><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">hexo史上最全搭建教程</a></p>
+<p>还有Hexo的官方文档：</p>
+<p><a href="https://hexo.io/zh-cn/docs/">文档 | Hexo</a></p>
+<p>这些都很有用，但都有着各自的局限性。有的内容已经过时，还有的地方没有讲全面，需要结合其他内容一起看。下面我会结合我踩过的坑，对这个博客的搭建过程做一个全面的梳理。不需要专业基础，只要你会上网，会安装软件，就可以看懂这个教程。如果你也想搭建个人博客，并且觉得这个博客建得还算可以，就跟着一起做一遍；如果你觉得这个博客呈现的效果和你的期望还有差距，也可以先看一遍这里的步骤，再在现存基础上尝试实现你心目中理想的效果。</p>
+<p>这一节我们用大约半个小时的时间，建立一个可以被他人访问到的博客框架。</p>
+<h1 id="安装所有需要用到的东西"><a href="#安装所有需要用到的东西" class="headerlink" title="安装所有需要用到的东西"></a>安装所有需要用到的东西</h1><p>先不用管它们都做什么用，以后会知道的。</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>在官网<a href="https://nodejs.org/zh-cn/">Node.js</a>上下载，一路Next即可。</p>
+<p>安装完成后，按Win+R→输入cmd打开命令提示符，输入</p>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line"><span class="keyword">node</span> <span class="title">-v</span></span><br></pre></td></tr></table></figure>
+
+<p>和</p>
+<figure class="highlight coffeescript"><table><tr><td class="code"><pre><span class="line"><span class="built_in">npm</span> -v</span><br></pre></td></tr></table></figure>
+
+<p>如果出现版本号，就说明Node.js安装成功。</p>
+<h2 id="安装Git"><a href="#安装Git" class="headerlink" title="安装Git"></a>安装Git</h2><p>同样，在官网<a href="https://git-scm.com/">Git</a>上下载，一路Next即可。</p>
+<p>安装完成后，打开命令提示符，输入</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">git <span class="comment">--version</span></span><br></pre></td></tr></table></figure>
+
+<p>如果出现版本号，就说明Git安装成功。</p>
+<p>安装完成后，鼠标右键菜单会多出两个选项：“Git GUI Here”和“Git Bash Here”，如下图所示：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/3.jpg" alt="3"></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>在你打算放置本地博客文件的地方新建一个文件夹，比如说我把博客文件放在C:\Blog\hexo文件夹下。</p>
+<p>然后在你刚才建的文件夹目录下点击鼠标右键，选择Git Bash Here，在跳出的控制台窗口中输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+
+<p>安装Hexo。</p>
+<p>安装完成后，输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo -v</span><br></pre></td></tr></table></figure>
+
+<p>如果出现版本号信息，说明安装成功。</p>
+<h2 id="安装Visual-Studio-Code"><a href="#安装Visual-Studio-Code" class="headerlink" title="安装Visual Studio Code"></a>安装Visual Studio Code</h2><p>在<a href="https://code.visualstudio.com/">Visual Studio Code</a>下载并安装。一路Next。</p>
+<h2 id="安装Typora"><a href="#安装Typora" class="headerlink" title="安装Typora"></a>安装Typora</h2><p>在<a href="https://typora.io/">Typora</a>下载并安装。Next。</p>
+<h1 id="配置GitHub"><a href="#配置GitHub" class="headerlink" title="配置GitHub"></a>配置GitHub</h1><p>对，就是那个<del>全球最大的同性交友网站</del>很geek的GitHub。</p>
+<h2 id="注册GitHub账号"><a href="#注册GitHub账号" class="headerlink" title="注册GitHub账号"></a>注册GitHub账号</h2><p>浏览器打开<a href="https://github.com/">GitHub</a>，在下图所示的地方注册：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/1.jpg" alt="1"></p>
+<p>用户名一定要好好起，因为如果你不打算买域名，那username.github.io就是你的博客访问地址了。</p>
+<h2 id="建立仓库"><a href="#建立仓库" class="headerlink" title="建立仓库"></a>建立仓库</h2><p>注册完成后，点击下图所示的位置：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/2.jpg" alt="2"></p>
+<p>会跳转到这个页面：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/4.jpg" alt="4"></p>
+<p>这里需要注意，“Repository name”必须是“username.github.io”（username为你的用户名），其余默认即可。</p>
+<p>填写完成后，点击“Create repository”，建立仓库。</p>
+<h1 id="构建网站"><a href="#构建网站" class="headerlink" title="构建网站"></a>构建网站</h1><p>在博客文件夹下Git Bash，输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+
+<p>你可以看到文件夹下多了一堆文件，这些文件构成了一个个人博客网站最基本的框架。</p>
+<p>再输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+
+<p>这个指令用于生成静态文件，你会看到当前文件夹下多了一个名为public的文件夹。</p>
+<p>输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo s  --debug</span><br></pre></td></tr></table></figure>
+
+<p>这个指令启动本地服务器，让你可以在本地看到网站效果，同时在控制台窗口中显示网站加载过程。</p>
+<blockquote>
+<p>Warning若不影响运行，可以忽略。</p>
+</blockquote>
+<p>打开浏览器，输入<a href="http://localhost:4000/">http://localhost:4000/</a>，如果一切顺利，你会看到这样的网页：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/5.jpg" alt="5"></p>
+<p>如果你看到的和预期不一致，请尝试根据控制台信息寻找原因，并检验每一步操作有无错误。</p>
+<p>按Ctrl+C关闭本地服务器。</p>
+<p>如果在本地服务器启动期间网站内容发生改变，直接刷新即可看到效果，不需要重启服务器。</p>
+<h1 id="让网站被别人访问到"><a href="#让网站被别人访问到" class="headerlink" title="让网站被别人访问到"></a>让网站被别人访问到</h1><p>刚才的网页只有我们自己能看见，那么怎么让别人也能访问到这个网页呢？这里我们借助GitHub Pages，将网站内容托管在GitHub。选择GitHub有以下几个原因：</p>
+<ol>
+<li>免费；</li>
+<li>支持自定义域名；</li>
+<li>GitHub背靠微软这棵大树，这意味着它足够稳定，不会时不时崩溃/不声不响永久瘫痪；</li>
+<li>GitHub本身是一个能打开眼界的网站。社区氛围好，关于Hexo的工具也多。</li>
+</ol>
+<h2 id="生成SSH"><a href="#生成SSH" class="headerlink" title="生成SSH"></a>生成SSH</h2><p>首先，我们希望Git能够使用我们的GitHub账号自动远程登录，不需要每次都手动输入用户名和密码。</p>
+<p>在博客文件所在文件夹右键打开Git Bash（如无特殊说明，后文中的Git Bash均为在博客文件所在文件夹Git Bash），输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;useremail&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这里的user.name和user.email分别对应你在注册GitHub时填入的用户名和邮箱，请自行修改。</p>
+<p>可以输入以下命令，检查你输入的用户名和邮箱是否正确</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+<p>然后输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&quot;useremail&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个指令生成密钥SSH key。遇到提示输入信息时直接回车即可。</p>
+<p>指令执行结束后，会在当前用户目录下生成.ssh文件夹，其中包含私钥文件id_rsa和公钥文件id_rsa.pub。我们需要将公钥放在GitHub上，当需要连接GitHub自己的账户时，它就会根据公钥匹配你的私钥，只有公钥与私钥互相匹配，才能顺利将文件上传GitHub。</p>
+<p>再输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-agent -s</span><br></pre></td></tr></table></figure>
+
+<p>继续输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh-add ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
+
+<p>这两个指令解释起来有点复杂，反正输就完事了。</p>
+<h2 id="将SSH添加到GitHub"><a href="#将SSH添加到GitHub" class="headerlink" title="将SSH添加到GitHub"></a>将SSH添加到GitHub</h2><p>输入以下指令</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">clip &lt; ~/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+
+<p>这条指令复制SSH key到剪贴板。</p>
+<p>打开GitHub，点击这里：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/6.jpg" alt="6"></p>
+<p>再点击左侧侧边栏的“SSH and GPG keys”，点击右上角的“New SSH key”添加公钥：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/7.jpg" alt="7"></p>
+<p>完成后点击“Add SSH key”，即可完成SSH key的添加。</p>
+<p>在Git Bash中输入以下命令，检验SSH是否配置成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+
+<p>出现提示输入“yes”即可。如果出现以下信息，说明配置成功</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">Hi username!You<span class="symbol">&#x27;ve</span> successfully authenticated,but GitHub does <span class="keyword">not</span> provide shell <span class="keyword">access</span>.</span><br></pre></td></tr></table></figure>
+
+<h2 id="部署到GitHub仓库"><a href="#部署到GitHub仓库" class="headerlink" title="部署到GitHub仓库"></a>部署到GitHub仓库</h2><p>打开GitHub，点击这里：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/8.jpg" alt="8"></p>
+<p>再点击你刚才建好的仓库，点击这里复制链接：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/9.jpg" alt="9"></p>
+<p>用Visual Studio Code打开博客文件夹下的config.yml<sup id="fnref:1"><a href="#fn:1" rel="footnote"><span class="hint--top hint--error hint--medium hint--rounded hint--bounce" aria-label="站点配置文件">[1]</span></a></sup>，修改最后一行的配置为</p>
+<figure class="highlight less"><table><tr><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:username/username.github.io.git</span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+
+<p>其中的“repository”后粘贴你刚才复制的链接。</p>
+<p>需要注意，yml的语法非常严格，请务必确保标点符号正确，不多出/遗漏空格。</p>
+<p>然后在Git Bash中输入</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+
+<p>这个指令安装deploy-git，有它才能进行部署操作。</p>
+<p>然后让我们Git Bash，来一套下面的Hexo三连：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+
+<p>其中hexo clean用于清除之前生成的东西（就是那个public文件夹）；hexo g（或者hexo generate）用于生成静态文件；hexo d（或者hexo deploy）用于将生成的静态文件部署到GitHub。</p>
+<p>现在再进入你为你的博客建立的GitHub仓库，应该可以看到包括index.html在内的一堆文件和文件夹。</p>
+<p>接下来，我们点击这里：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/10.jpg" alt="10"></p>
+<p>往下拉，有个GitHub Pages，在“Source”这里选择“Branch: master”，然后点击“Save”，完成GitHub Pages的部署。</p>
+<p>现在在浏览器地址栏输入username.github.io（username为你的github用户名），就可以访问网站了。</p>
+<h1 id="网站无法访问的解决方案"><a href="#网站无法访问的解决方案" class="headerlink" title="网站无法访问的解决方案"></a>网站无法访问的解决方案</h1><p>如果你无法访问你的GitHub Pages，浏览器显示：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/12.jpg" alt="12"></p>
+<p>请按照以下步骤操作：</p>
+<p>Win+R→cmd打开命令提示符，输入</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">ping</span> <span class="selector-tag">username</span><span class="selector-class">.github</span><span class="selector-class">.io</span></span><br></pre></td></tr></table></figure>
+
+<p>如果出现如下信息：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/11.jpg" alt="11"></p>
+<p>说明你的GitHub Pages的DNS被解析成了127.0.0.1，而不是网站的实际IP地址，这就是你无法访问的原因。</p>
+<p>进入控制面板→网络和Internet→网络和共享中心→点击你连接的网络→属性→Internet协议版本4（TCP/IPv4）→属性→使用下面的DNS服务器→114.114.114.114</p>
+<p>然后再ping一次username.github.io（username为你的GitHub用户名），检查此时IP地址是否正确。</p>
+<p>如果IP地址正确，浏览器访问网站显示GitHub 404页面，则进行以下操作：</p>
+<p>进入你为个人博客建立的GitHub仓库，检查并确保：</p>
+<ol>
+<li>仓库名称为username.github.io（username为你的GitHub用户名）；</li>
+<li>在这里：</li>
+</ol>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/hexo-github-pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/13.jpg" alt="13"></p>
+<p>将master设置为default branch，并删除master外的branch。</p>
+<ol start="3">
+<li>你的master分支下有index.html文件。</li>
+</ol>
+<div id="footnotes"><hr><div id="footnotelist"><ol style="list-style: none; padding-left: 0; margin-left: 40px"><li id="fn:1"><span style="display: inline-block; vertical-align: top; padding-right: 10px; margin-left: -40px">1.</span><span style="display: inline-block; vertical-align: top; margin-left: 10px;">站点配置文件<a href="#fnref:1" rev="footnote"> ↩</a></span></li></ol></div></div>]]></content>
+      <categories>
+        <category>个人博客搭建</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>个人博客，完成！</title>
     <url>/posts/4de85580.html</url>
-    <content><![CDATA[<p>就像标题说的那样，这是这个博客的第一篇文章。</p>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>就像标题说的那样，这是这个博客的第一篇文章。</p>
 <p>有人说，你看现在都0202年了，博客的时代早已过去，写博客是件很没有意义的事。最近在学Python，时不时遇到奇奇怪怪的问题。有的是解释器报错，程序跑不起来；还有的是程序跑是跑起来了，但是没有得到期望的结果。一般来说，像我这样的初学者，是很难凭借自己的力量找出问题出在什么地方的。最后让我解决问题，从而得以把学习进程坚持下去的，往往是他人贡献的一篇篇博客。</p>
 <a id="more"></a>
 
