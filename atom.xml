@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-24T10:07:51.050Z</updated>
+  <updated>2020-11-24T10:13:55.190Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -21,16 +21,17 @@
     <link href="http://sherryix.com/posts/9e423b68.html"/>
     <id>http://sherryix.com/posts/9e423b68.html</id>
     <published>2020-11-24T03:47:24.000Z</published>
-    <updated>2020-11-24T10:07:51.050Z</updated>
+    <updated>2020-11-24T10:13:55.190Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css&quot;&gt;&lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot;</summary>
-        
-      
+    <summary type="html">&lt;h1 id=&quot;引言&quot;&gt;&lt;a href=&quot;#引言&quot; class=&quot;headerlink&quot; title=&quot;引言&quot;&gt;&lt;/a&gt;引言&lt;/h1&gt;&lt;p&gt;在这个页面的底端有这样一句话：&lt;/p&gt;
+&lt;p&gt;“由 &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://pisces.theme-next.org/&quot;&gt;NexT.Pisces&lt;/a&gt; 强力驱动”&lt;/p&gt;
+&lt;p&gt;相信已经有人搜索过这里出现的“Hexo”和“NexT.Pisces”。你可能会找到这样的教程：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://blog.csdn.net/sinat_37781304/article/details/82729029&quot;&gt;hexo史上最全搭建教程&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;还有Hexo的官方文档：&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/docs/&quot;&gt;文档 | Hexo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;这些都很有用，但都有着各自的局限性。有的内容已经过时，还有的地方没有讲全面，需要结合其他内容一起看。下面我会结合我踩过的坑，对这个博客的搭建过程做一个全面的梳理。不需要专业基础，只要你会上网，会安装软件，就可以看懂这个教程。如果你也想搭建个人博客，并且觉得这个博客建得还算可以，就跟着一起做一遍；如果你觉得这个博客呈现的效果和你的期望还有差距，也可以先看一遍这里的步骤，再在现存基础上尝试实现你心目中理想的效果。&lt;/p&gt;
+&lt;p&gt;这一节我们用大约半个小时的时间，建立一个可以被他人访问到的博客框架。&lt;/p&gt;</summary>
     
     
     
