@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-25T12:31:36.014Z</updated>
+  <updated>2020-11-25T13:33:45.516Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>valine自动获取QQ头像</title>
+    <link href="http://sherryix.com/posts/22ffa467.html"/>
+    <id>http://sherryix.com/posts/22ffa467.html</id>
+    <published>2020-11-25T13:24:01.000Z</published>
+    <updated>2020-11-25T13:33:45.516Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;给valine添加根据输入的QQ号自动获取QQ头像的功能。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客搭建" scheme="http://sherryix.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="valine" scheme="http://sherryix.com/tags/valine/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo+GitHub Pages搭建个人博客（四）</title>

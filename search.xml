@@ -322,6 +322,28 @@
       </tags>
   </entry>
   <entry>
+    <title>valine自动获取QQ头像</title>
+    <url>/posts/22ffa467.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>给valine添加根据输入的QQ号自动获取QQ头像的功能。</p>
+<a id="more"></a>
+
+<p>valine内置自动获取QQ昵称和QQ头像的功能，不过这个功能是默认关闭的。如果不看官方文档，很难知道valine还有这个功能。</p>
+<p>所以！！！一定要看官方文档！！！一个字一个字的看！！！</p>
+<p>具体到我们的NexT主题，打开themes\next\layout\_third-party\comments\valine.swig文件，像我这样在一堆配置的最后一行加一个</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">enableQQ:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<p>注意空格数量，最终效果如下图：</p>
+<p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/valine%E8%87%AA%E5%8A%A8%E8%8E%B7%E5%8F%96QQ%E5%A4%B4%E5%83%8F/1.jpg" alt="1"></p>
+<p>就可以了。</p>
+]]></content>
+      <categories>
+        <category>个人博客搭建</category>
+      </categories>
+      <tags>
+        <tag>valine</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>一个诡异的valine评论界面无法显示问题</title>
     <url>/posts/3372c6b1.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天写完<a href="http://sherryix.com/posts/b7a71549.html">Hexo+GitHub Pages搭建个人博客（二）</a>，照例Hexo三连，发现评论显示不出来。再看前面两篇文章的评论，是正常的。</p>
