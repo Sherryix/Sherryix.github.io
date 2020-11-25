@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-25T05:58:48.326Z</updated>
+  <updated>2020-11-25T09:23:30.541Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo+GitHub Pages搭建个人博客（四）</title>
+    <link href="http://sherryix.com/posts/4d94af7e.html"/>
+    <id>http://sherryix.com/posts/4d94af7e.html</id>
+    <published>2020-11-25T08:32:08.000Z</published>
+    <updated>2020-11-25T09:23:30.541Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这一节主要内容是个人域名和SEO优化。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客搭建" scheme="http://sherryix.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="Hexo" scheme="http://sherryix.com/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo+GitHub Pages搭建个人博客（三）</title>
+    <link href="http://sherryix.com/posts/fab9b61b.html"/>
+    <id>http://sherryix.com/posts/fab9b61b.html</id>
+    <published>2020-11-25T07:48:13.000Z</published>
+    <updated>2020-11-25T09:04:44.488Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这一节是一些和文章有关的东西。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="个人博客搭建" scheme="http://sherryix.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    
+    
+    <category term="Hexo" scheme="http://sherryix.com/tags/Hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>一个诡异的valine评论界面无法显示问题</title>
@@ -44,7 +82,7 @@
     <link href="http://sherryix.com/posts/b7a71549.html"/>
     <id>http://sherryix.com/posts/b7a71549.html</id>
     <published>2020-11-25T03:32:29.000Z</published>
-    <updated>2020-11-25T04:55:16.799Z</updated>
+    <updated>2020-11-25T07:54:16.667Z</updated>
     
     
     <summary type="html">&lt;p&gt;在上一篇文章里，我们搭建了一个基本的博客框架。这个框架能不能用呢？肯定是能的，但是恐怕没几个人会觉得好用。从现在开始，我们将对这个框架进行填充，让它满足我们的各种需求。&lt;/p&gt;</summary>
