@@ -237,6 +237,8 @@
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天写完<a href="http://sherryix.com/posts/b7a71549.html">Hexo+GitHub Pages搭建个人博客（二）</a>，照例Hexo三连，发现评论显示不出来。再看前面两篇文章的评论，是正常的。</p>
 <p>于是我上LeanCloud看了一眼。好像……也看不出什么问题。</p>
 <p>然而它就是显示不出来。</p>
+<a id="more"></a>
+
 <p>我甚至把原来的应用删掉重新创建了一个，并且重新配置了一遍。对，这意味着我原来的评论和阅读量数据都没有了。</p>
 <p>然而依然没有解决问题。</p>
 <p>又一个找不出原因的烦人bug，我想。</p>

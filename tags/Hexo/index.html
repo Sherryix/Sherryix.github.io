@@ -503,3 +503,25 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 
 </body>
 </html>
+ew Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '9FCdW6GSeLpG1TvKWzbiqE0p-gzGzoHsz',
+      appKey     : 'g3oOQMsbYbVMeubfMDOKWUCs',
+      placeholder: "评论支持Markdown",
+      avatar     : 'retro',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : '' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
