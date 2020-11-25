@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-25T04:00:53.747Z</updated>
+  <updated>2020-11-25T04:55:16.799Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://sherryix.com/posts/b7a71549.html"/>
     <id>http://sherryix.com/posts/b7a71549.html</id>
     <published>2020-11-25T03:32:29.000Z</published>
-    <updated>2020-11-25T04:00:53.747Z</updated>
+    <updated>2020-11-25T04:55:16.799Z</updated>
     
     
     <summary type="html">&lt;p&gt;在上一篇文章里，我们搭建了一个基本的博客框架。这个框架能不能用呢？肯定是能的，但是恐怕没几个人会觉得好用。从现在开始，我们将对这个框架进行填充，让它满足我们的各种需求。&lt;/p&gt;</summary>

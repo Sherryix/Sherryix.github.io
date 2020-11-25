@@ -31,10 +31,10 @@
 <p>其次，你需要把这两张图片放入themes\next\source\images文件夹下。</p>
 <p>最后，你需要更改主题配置文件（即themes\next文件夹下的_config.yml文件，下同）的这个地方：</p>
 <p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/Hexo-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/8.jpg" alt="8"></p>
-<h1 id="Valine"><a href="#Valine" class="headerlink" title="Valine"></a>Valine</h1><p>官方文档没有提到Valine这个评论系统，但NexT主题本身是支持Valine的。</p>
-<p>Valine的官方文档在这里：<a href="https://valine.js.org/">介绍 | Valine 一款快速、简洁且高效的无后端评论系统。</a></p>
-<p>Valine并非没有后端，而是使用了国内后端云服务提供商LeanCloud提供的存储服务。</p>
-<p>下面详细说明Valine评论功能的添加和设置。</p>
+<h1 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h1><p>官方文档没有提到valine这个评论系统，但NexT主题本身是支持valine的。</p>
+<p>valine的官方文档在这里：<a href="https://valine.js.org/">介绍 | valine 一款快速、简洁且高效的无后端评论系统。</a></p>
+<p>valine并非没有后端，而是使用了国内后端云服务提供商LeanCloud提供的存储服务。</p>
+<p>下面详细说明valine评论功能的添加和设置。</p>
 <h2 id="配置LeanCloud"><a href="#配置LeanCloud" class="headerlink" title="配置LeanCloud"></a>配置LeanCloud</h2><p>在<a href="https://www.leancloud.cn/">LeanCloud</a>注册，注册后进入控制台，点击“创建应用”。名称随便起，计价方案选择“开发版”，点击“创建”。</p>
 <p><img src="https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/Hexo-GitHub-Pages%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BA%8C%EF%BC%89/2.jpg" alt="2"></p>
 <p>进入刚刚创建好的应用，点击“存储”→“创建Class”，分别创建名为Comment和Counter的Class。</p>
