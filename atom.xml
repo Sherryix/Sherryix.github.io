@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-25T03:40:58.410Z</updated>
+  <updated>2020-11-24T10:13:55.190Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,25 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hexo+GitHub Pages搭建个人博客（二）</title>
-    <link href="http://sherryix.com/posts/b7a71549.html"/>
-    <id>http://sherryix.com/posts/b7a71549.html</id>
-    <published>2020-11-24T12:32:29.000Z</published>
-    <updated>2020-11-25T03:40:58.410Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;在上一篇文章里，我们搭建了一个基本的博客框架。这个框架能不能用呢？肯定是能的，但是恐怕没几个人会觉得好用。从现在开始，我们将对这个框架进行填充，让它满足我们的各种需求。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="个人博客搭建" scheme="http://sherryix.com/categories/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    
-    
-    <category term="Hexo" scheme="http://sherryix.com/tags/Hexo/"/>
-    
-  </entry>
   
   <entry>
     <title>Hexo+GitHub Pages搭建个人博客（一）</title>
