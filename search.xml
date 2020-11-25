@@ -122,6 +122,40 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo+GitHub Pages搭建个人博客（四）</title>
+    <url>/posts/4d94af7e.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这一节主要内容是个人域名和SEO优化。</p>
+<a id="more"></a>
+
+<h1 id="个人域名"><a href="#个人域名" class="headerlink" title="个人域名"></a>个人域名</h1><p>如果你不希望你的域名是username.github.io，那么你就需要购买个人域名。</p>
+<p>我是在<a href="https://sg.godaddy.com/zh">GoDaddy</a>上买的，据说国内的域名注册商也不错，这个可以自己选择。</p>
+<p>注册完成后，登录GitHub，找到网站对应的仓库，在“Settings”中找到“Custom domain”，填入你刚刚注册的域名。</p>
+<p>在<a href="https://www.ipaddress.com/">这里</a>填入username.github.io（username为你的GitHub用户名），查找网站的IP地址。</p>
+<p>然后在注册域名的网站，在管理DNS的地方设置CNAME为username.github.io（username为你的GitHub用户名），A为网站IP地址，保存后就可以用自己的域名访问网站了。</p>
+<h1 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h1><p>为了让搜索引擎能更好搜索到我们的网站，我们还需要做一定的SEO优化。</p>
+<h2 id="添加sitemap"><a href="#添加sitemap" class="headerlink" title="添加sitemap"></a>添加sitemap</h2><p>Git Bash执行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+
+<p>打开站点配置文件，添加</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sitemap:</span> </span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="添加robots"><a href="#添加robots" class="headerlink" title="添加robots"></a>添加robots</h2><p>在source文件夹下新建robots.txt文件，添加：</p>
+<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">User-<span class="attr">agent:</span> *</span><br><span class="line"><span class="attr">Allow:</span> /</span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/home/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/archives/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/categories/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/tags/</span> </span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/about/</span> </span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/vendors/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/js/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/css/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/fonts/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/vendors/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/fancybox/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="attr">http:</span><span class="comment">//（网址）/sitemap.xml</span></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="attr">http:</span><span class="comment">//（网址）/baidusitemap.xml</span></span><br></pre></td></tr></table></figure>
+
+<p>将（网址）改为你的网站地址。</p>
+<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>NexT主题自带SEO优化设置。</p>
+<p>打开主题配置文件，将原设置更改为：</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># SEO Settings</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disable Baidu transformation on mobile devices.</span></span><br><span class="line"><span class="attr">disable_baidu_transformation:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If true, site-subtitle will be added to index page.</span></span><br><span class="line"><span class="comment"># Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)</span></span><br><span class="line"><span class="attr">index_with_subtitle:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Automatically add external URL with Base64 encrypt &amp; decrypt.</span></span><br><span class="line"><span class="attr">exturl:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Google Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://www.google.com/webmasters</span></span><br><span class="line"><span class="attr">google_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bing Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://www.bing.com/webmaster</span></span><br><span class="line"><span class="attr">bing_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Yandex Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://webmaster.yandex.ru</span></span><br><span class="line"><span class="attr">yandex_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>个人博客搭建</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo+GitHub Pages搭建个人博客（一）</title>
     <url>/posts/9e423b68.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>在这个页面的底端有这样一句话：</p>
@@ -286,55 +320,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo+GitHub Pages搭建个人博客（四）</title>
-    <url>/posts/4d94af7e.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>这一节主要内容是个人域名和SEO优化。</p>
-<a id="more"></a>
-
-<h1 id="个人域名"><a href="#个人域名" class="headerlink" title="个人域名"></a>个人域名</h1><p>如果你不希望你的域名是username.github.io，那么你就需要购买个人域名。</p>
-<p>我是在<a href="https://sg.godaddy.com/zh">GoDaddy</a>上买的，据说国内的域名注册商也不错，这个可以自己选择。</p>
-<p>注册完成后，登录GitHub，找到网站对应的仓库，在“Settings”中找到“Custom domain”，填入你刚刚注册的域名。</p>
-<p>在<a href="https://www.ipaddress.com/">这里</a>填入username.github.io（username为你的GitHub用户名），查找网站的IP地址。</p>
-<p>然后在注册域名的网站，在管理DNS的地方设置CNAME为username.github.io（username为你的GitHub用户名），A为网站IP地址，保存后就可以用自己的域名访问网站了。</p>
-<h1 id="SEO"><a href="#SEO" class="headerlink" title="SEO"></a>SEO</h1><p>为了让搜索引擎能更好搜索到我们的网站，我们还需要做一定的SEO优化。</p>
-<h2 id="添加sitemap"><a href="#添加sitemap" class="headerlink" title="添加sitemap"></a>添加sitemap</h2><p>Git Bash执行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-
-<p>打开站点配置文件，添加</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">sitemap:</span> </span><br><span class="line">  <span class="attr">path:</span> <span class="string">sitemap.xml</span></span><br><span class="line"><span class="attr">baidusitemap:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">baidusitemap.xml</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="添加robots"><a href="#添加robots" class="headerlink" title="添加robots"></a>添加robots</h2><p>在source文件夹下新建robots.txt文件，添加：</p>
-<figure class="highlight groovy"><table><tr><td class="code"><pre><span class="line">User-<span class="attr">agent:</span> *</span><br><span class="line"><span class="attr">Allow:</span> /</span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/home/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/archives/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/categories/</span></span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/tags/</span> </span><br><span class="line"><span class="attr">Allow:</span> <span class="regexp">/about/</span> </span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/vendors/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/js/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/css/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/fonts/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/vendors/</span></span><br><span class="line"><span class="attr">Disallow:</span> <span class="regexp">/fancybox/</span></span><br><span class="line"></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="attr">http:</span><span class="comment">//（网址）/sitemap.xml</span></span><br><span class="line"><span class="attr">Sitemap:</span> <span class="attr">http:</span><span class="comment">//（网址）/baidusitemap.xml</span></span><br></pre></td></tr></table></figure>
-
-<p>将（网址）改为你的网站地址。</p>
-<h2 id="配置主题"><a href="#配置主题" class="headerlink" title="配置主题"></a>配置主题</h2><p>NexT主题自带SEO优化设置。</p>
-<p>打开主题配置文件，将原设置更改为：</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"><span class="comment"># SEO Settings</span></span><br><span class="line"><span class="comment"># ---------------------------------------------------------------</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Disable Baidu transformation on mobile devices.</span></span><br><span class="line"><span class="attr">disable_baidu_transformation:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If true, site-subtitle will be added to index page.</span></span><br><span class="line"><span class="comment"># Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)</span></span><br><span class="line"><span class="attr">index_with_subtitle:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Automatically add external URL with Base64 encrypt &amp; decrypt.</span></span><br><span class="line"><span class="attr">exturl:</span> <span class="literal">false</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Google Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://www.google.com/webmasters</span></span><br><span class="line"><span class="attr">google_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Bing Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://www.bing.com/webmaster</span></span><br><span class="line"><span class="attr">bing_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Yandex Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://webmaster.yandex.ru</span></span><br><span class="line"><span class="attr">yandex_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Baidu Webmaster tools verification.</span></span><br><span class="line"><span class="comment"># See: https://ziyuan.baidu.com/site</span></span><br><span class="line"><span class="attr">baidu_site_verification:</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Enable baidu push so that the blog will push the url to baidu automatically which is very helpful for SEO.</span></span><br><span class="line"><span class="attr">baidu_push:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>个人博客搭建</category>
-      </categories>
-      <tags>
-        <tag>Hexo</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>个人博客，完成！</title>
-    <url>/posts/4de85580.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>就像标题说的那样，这是这个博客的第一篇文章。</p>
-<p>有人说，你看现在都0202年了，博客的时代早已过去，写博客是件很没有意义的事。最近在学Python，时不时遇到奇奇怪怪的问题。有的是解释器报错，程序跑不起来；还有的是程序跑是跑起来了，但是没有得到期望的结果。一般来说，像我这样的初学者，是很难凭借自己的力量找出问题出在什么地方的。最后让我解决问题，从而得以把学习进程坚持下去的，往往是他人贡献的一篇篇博客。</p>
-<a id="more"></a>
-
-<p>这就是个人博客最大的意义——记录，分享，交流。记录即为总结，输出即为反哺。把自己研究半天终于解决的问题整理成文章发出来，不仅方便自己随时回顾，还方便别人在遇到相似问题时能够更快解决。</p>
-<p>同时，写博客也是在和自己对话。它是一个寄托自己记忆和思考的地方，展示着自己的变化和成长。翻看过去的博客，就像回到过去写下博客的自己。有了这样一个记忆深刻的时间点，就感觉时间流逝得没有那么快了。</p>
-<p>接下来大概会先整理出这个博客搭建的过程，以及写文章最重要的Markdown语言。</p>
-]]></content>
-      <tags>
-        <tag>随笔</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>一个诡异的valine评论界面无法显示问题</title>
     <url>/posts/3372c6b1.html</url>
     <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>今天写完<a href="http://sherryix.com/posts/b7a71549.html">Hexo+GitHub Pages搭建个人博客（二）</a>，照例Hexo三连，发现评论显示不出来。再看前面两篇文章的评论，是正常的。</p>
@@ -366,6 +351,21 @@
       <tags>
         <tag>Hexo</tag>
         <tag>valine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>个人博客，完成！</title>
+    <url>/posts/4de85580.html</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><p>就像标题说的那样，这是这个博客的第一篇文章。</p>
+<p>有人说，你看现在都0202年了，博客的时代早已过去，写博客是件很没有意义的事。最近在学Python，时不时遇到奇奇怪怪的问题。有的是解释器报错，程序跑不起来；还有的是程序跑是跑起来了，但是没有得到期望的结果。一般来说，像我这样的初学者，是很难凭借自己的力量找出问题出在什么地方的。最后让我解决问题，从而得以把学习进程坚持下去的，往往是他人贡献的一篇篇博客。</p>
+<a id="more"></a>
+
+<p>这就是个人博客最大的意义——记录，分享，交流。记录即为总结，输出即为反哺。把自己研究半天终于解决的问题整理成文章发出来，不仅方便自己随时回顾，还方便别人在遇到相似问题时能够更快解决。</p>
+<p>同时，写博客也是在和自己对话。它是一个寄托自己记忆和思考的地方，展示着自己的变化和成长。翻看过去的博客，就像回到过去写下博客的自己。有了这样一个记忆深刻的时间点，就感觉时间流逝得没有那么快了。</p>
+<p>接下来大概会先整理出这个博客搭建的过程，以及写文章最重要的Markdown语言。</p>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
