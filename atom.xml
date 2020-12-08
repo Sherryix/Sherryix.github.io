@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-11-25T13:33:45.516Z</updated>
+  <updated>2020-12-08T04:45:00.774Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CPC更新小工具开发小记（1）——概述</title>
+    <link href="http://sherryix.com/posts/ac3cd5dc.html"/>
+    <id>http://sherryix.com/posts/ac3cd5dc.html</id>
+    <published>2020-12-07T15:15:25.000Z</published>
+    <updated>2020-12-08T04:45:00.774Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这是我的第二个程序，对我来说意义重大。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="CPC更新小工具开发小记" scheme="http://sherryix.com/categories/CPC%E6%9B%B4%E6%96%B0%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%BC%80%E5%8F%91%E5%B0%8F%E8%AE%B0/"/>
+    
+    
+    <category term="Python" scheme="http://sherryix.com/tags/Python/"/>
+    
+  </entry>
   
   <entry>
     <title>valine自动获取QQ头像</title>
