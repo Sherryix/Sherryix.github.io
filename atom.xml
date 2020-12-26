@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-12-26T00:31:54.764Z</updated>
+  <updated>2020-12-26T02:58:09.853Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -17,53 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>再见，2020</title>
-    <link href="http://sherryix.com/posts/ed3a76a0.html"/>
-    <id>http://sherryix.com/posts/ed3a76a0.html</id>
-    <published>2020-12-26T00:31:54.000Z</published>
-    <updated>2020-12-26T00:31:54.764Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>HTTP笔记整理</title>
-    <link href="http://sherryix.com/posts/1b440c8.html"/>
-    <id>http://sherryix.com/posts/1b440c8.html</id>
-    <published>2020-12-24T13:35:44.000Z</published>
-    <updated>2020-12-24T13:35:44.704Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</summary>
-        
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>HTML笔记整理（一）</title>
     <link href="http://sherryix.com/posts/e4fed76a.html"/>
     <id>http://sherryix.com/posts/e4fed76a.html</id>
     <published>2020-12-15T02:10:46.000Z</published>
-    <updated>2020-12-26T02:57:46.971Z</updated>
+    <updated>2020-12-26T02:58:09.853Z</updated>
     
     
     <summary type="html">&lt;p&gt;根据&lt;a href=&quot;https://www.w3school.com.cn/html/html_jianjie.asp&quot;&gt;HTML 系列教程&lt;/a&gt;和&lt;a href=&quot;https://www.bilibili.com/video/BV1vs411M7aT&quot;&gt;为初学者准备的：HTML 速成&lt;/a&gt;整理的笔记。&lt;/p&gt;</summary>
@@ -226,13 +184,15 @@
     <link href="http://sherryix.com/posts/4de85580.html"/>
     <id>http://sherryix.com/posts/4de85580.html</id>
     <published>2020-11-21T12:29:09.000Z</published>
-    <updated>2020-11-22T13:02:21.166Z</updated>
+    <updated>2020-12-26T03:00:06.334Z</updated>
     
     
     <summary type="html">&lt;p&gt;就像标题说的那样，这是这个博客的第一篇文章。&lt;/p&gt;
 &lt;p&gt;有人说，你看现在都0202年了，博客的时代早已过去，写博客是件很没有意义的事。最近在学Python，时不时遇到奇奇怪怪的问题。有的是解释器报错，程序跑不起来；还有的是程序跑是跑起来了，但是没有得到期望的结果。一般来说，像我这样的初学者，是很难凭借自己的力量找出问题出在什么地方的。最后让我解决问题，从而得以把学习进程坚持下去的，往往是他人贡献的一篇篇博客。&lt;/p&gt;</summary>
     
     
+    
+    <category term="随笔" scheme="http://sherryix.com/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
     <category term="随笔" scheme="http://sherryix.com/tags/%E9%9A%8F%E7%AC%94/"/>

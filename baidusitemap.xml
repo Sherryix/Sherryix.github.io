@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://sherryix.com/posts/4de85580.html</loc>
+    <lastmod>2020-12-26</lastmod>
+  </url>
+  <url>
     <loc>http://sherryix.com/posts/e4fed76a.html</loc>
     <lastmod>2020-12-26</lastmod>
-  </url>
-  <url>
-    <loc>http://sherryix.com/posts/ed3a76a0.html</loc>
-    <lastmod>2020-12-26</lastmod>
-  </url>
-  <url>
-    <loc>http://sherryix.com/posts/1b440c8.html</loc>
-    <lastmod>2020-12-24</lastmod>
   </url>
   <url>
     <loc>http://sherryix.com/posts/ac3cd5dc.html</loc>
@@ -39,9 +35,5 @@
   <url>
     <loc>http://sherryix.com/posts/9e423b68.html</loc>
     <lastmod>2020-11-24</lastmod>
-  </url>
-  <url>
-    <loc>http://sherryix.com/posts/4de85580.html</loc>
-    <lastmod>2020-11-22</lastmod>
   </url>
 </urlset> 

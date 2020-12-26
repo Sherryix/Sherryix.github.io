@@ -388,6 +388,9 @@
 <p>同时，写博客也是在和自己对话。它是一个寄托自己记忆和思考的地方，展示着自己的变化和成长。翻看过去的博客，就像回到过去写下博客的自己。有了这样一个记忆深刻的时间点，就感觉时间流逝得没有那么快了。</p>
 <p>接下来大概会先整理出这个博客搭建的过程，以及写文章最重要的Markdown语言。</p>
 ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
       <tags>
         <tag>随笔</tag>
       </tags>
@@ -418,16 +421,6 @@
       <tags>
         <tag>Python</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>再见，2020</title>
-    <url>/posts/ed3a76a0.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
-  </entry>
-  <entry>
-    <title>HTTP笔记整理</title>
-    <url>/posts/1b440c8.html</url>
-    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css">]]></content>
   </entry>
   <entry>
     <title>HTML笔记整理（一）</title>
