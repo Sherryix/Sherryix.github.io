@@ -6,7 +6,7 @@
   <link href="http://sherryix.com/atom.xml" rel="self"/>
   
   <link href="http://sherryix.com/"/>
-  <updated>2020-12-26T14:58:05.135Z</updated>
+  <updated>2021-01-10T06:56:21.219Z</updated>
   <id>http://sherryix.com/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>好好吃饭（1）——牛筋丸玉米萝卜汤</title>
+    <link href="http://sherryix.com/posts/b736c640.html"/>
+    <id>http://sherryix.com/posts/b736c640.html</id>
+    <published>2021-01-10T06:08:12.000Z</published>
+    <updated>2021-01-10T06:56:21.219Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://imagebed-1304314898.cos.ap-nanjing.myqcloud.com/%E5%A5%BD%E5%A5%BD%E5%90%83%E9%A5%AD%EF%BC%881%EF%BC%89%E2%80%94%E2%80%94%E7%89%9B%E7%AD%8B%E4%B8%B8%E7%8E%89%E7%B1%B3%E8%90%9D%E5%8D%9C%E6%B1%A4/1.jpg&quot; alt=&quot;1&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="好好吃饭" scheme="http://sherryix.com/categories/%E5%A5%BD%E5%A5%BD%E5%90%83%E9%A5%AD/"/>
+    
+    
+    <category term="生活" scheme="http://sherryix.com/tags/%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
   
   <entry>
     <title>CSS笔记整理（一）</title>
